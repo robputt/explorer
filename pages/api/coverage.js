@@ -2,8 +2,8 @@ import { getCoverage } from '../../commonjs/coverage'
 import Redis from 'ioredis'
 
 let redisClient
-if (process.env.REDIS_URL) {
-  redisClient = new Redis(process.env.REDIS_URL)
+if (process.env.REDIS_TLS_URL) {
+  redisClient = new Redis(process.env.REDIS_TLS_URL)
 }
 
 const getCache = async (key, fallback) => {

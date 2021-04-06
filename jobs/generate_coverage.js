@@ -1,7 +1,7 @@
 const Redis = require('ioredis')
 const { getCoverage } = require('../commonjs/coverage')
 
-const redisClient = new Redis(process.env.REDIS_URL)
+const redisClient = new Redis(process.env.REDIS_TLS_URL)
 
 const setCache = async (key, value) => {
   await redisClient.set(key, JSON.stringify(value))
