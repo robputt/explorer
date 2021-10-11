@@ -49,6 +49,12 @@ export const communityToolsList = [
     description: 'Helium Network Planning, Optimization and Simulations',
     tags: ['Monitoring', 'Planning'],
   },
+  {
+    name: 'HeliumStatus.io',
+    url: 'https://app.heliumstatus.io',
+    description: 'Diagnostic tools and hotspot monitoring',
+    tags: ['Monitoring'],
+  }
   // The lines below are a template that you can copy and paste and then populate
   // to add a new tool to the list.All the possible tags are included in the
   // template, so just remove the ones that don't apply, and please don't make up
